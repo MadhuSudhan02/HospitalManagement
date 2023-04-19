@@ -1,0 +1,27 @@
+{
+  "login": [
+    {
+      "id": 1,
+      "login": "m02sudhan@gmail.com",
+      "password": "madhu@123"
+    },
+    {
+      "password": "ram@123",
+      "id": 2
+    },
+    {
+      "password": "ramm@123",
+      "id": 3
+    },
+    {
+      "email": "mad@gmail.com",
+      "password": "mad@123",
+      "id": 4
+    },
+    {
+      "email": "ram@gmail.com",
+      "password": "ram@123",
+      "id": 5
+    }
+  ]
+}

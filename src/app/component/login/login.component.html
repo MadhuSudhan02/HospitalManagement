@@ -1,0 +1,39 @@
+<div class="background">
+    <div class="container">
+        <div class="main">
+            <div class="head">
+                <span class="font">Login Form</span>
+                <span class="font-sub">Login to access your Account</span>
+
+
+                <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="space">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Login</mat-label>
+                        <input matInput formControlName="email" placeholder="login">
+                        <mat-error>Email is required</mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline">
+                        <mat-label>password</mat-label>
+                        <input matInput formControlName="password" placeholder="password">
+                        <mat-error>password is required</mat-error>
+                    </mat-form-field>
+                    <mat-slide-toggle class="example-margin">
+                        <span class="fontsub">Remember Me</span>
+                    </mat-slide-toggle>
+
+                    <div class="btn">
+                        <button class="button"><img class="img" src="../../../assets/icons8-login-50.png" alt=""><span class="center">Login</span></button>
+                    </div>
+                </form>
+
+
+            </div>
+            <p class="col">forgot password?</p>
+            <div class="bot">
+                Don't have account?<p routerLink="/signup" class="col">SignUp!</p>
+            </div>
+
+        </div>
+    </div>
+</div>

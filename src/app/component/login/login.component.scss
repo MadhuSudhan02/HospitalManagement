@@ -1,0 +1,112 @@
+.background {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 520px;
+    height: 600px;
+    background: white;
+    box-shadow: 0px 30px 30px rgba(0,0,0,0.3);
+}
+.main {
+    padding: 20px 50px 0px 50px;
+}
+// .head{
+//     display: flex;
+//     flex-direction: column;
+// }
+.font {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+.font-sub {
+    color: gray;
+    font-size: 16px;
+}
+.head {
+    display: flex;
+    flex-direction: column;
+    // margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 18px;
+}
+.font {
+    font-size: 32px;
+    font-weight: 500;
+}
+.sub {
+    font-size: 18px;
+    color: #8F9091;
+}
+mat-form-field{
+    width: 100%;
+}
+.button{
+    width: 140px;
+    height: 54px;
+    background-color: #3B6CFB;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    // text-align: center;
+    color: white;
+
+}
+.center{
+    position: relative;
+    bottom: 3px;
+}
+.col{
+    color: #3B6CFB;
+}
+.bot{
+    display: flex;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.fontsub{
+    font-size: 18px;
+    margin-left: 10px;
+}
+.btn {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.img {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    // bottom: 10px;
+    top: 4px;
+    margin-right: 10px;
+}
+.space {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.mat-mdc-slide-toggle.mat-accent {
+    --mdc-switch-selected-focus-state-layer-color: #3B6CFB;
+    --mdc-switch-selected-handle-color: #3B6CFB;
+    --mdc-switch-selected-hover-state-layer-color: #3B6CFB;
+    --mdc-switch-selected-pressed-state-layer-color: #3B6CFB;
+    --mdc-switch-selected-focus-handle-color: #3B6CFB;
+    --mdc-switch-selected-hover-handle-color: #3B6CFB;
+    --mdc-switch-selected-pressed-handle-color: #3B6CFB;
+    --mdc-switch-selected-focus-track-color: #3B6CFB;
+    --mdc-switch-selected-hover-track-color: #3B6CFB;
+    --mdc-switch-selected-pressed-track-color: #3B6CFB;
+    --mdc-switch-selected-track-color: #3B6CFB;
+}
+
+@media screen and (max-width : 480px) and (min-width : 320px) {
+    .container {
+        height: 100%;
+    }
+}

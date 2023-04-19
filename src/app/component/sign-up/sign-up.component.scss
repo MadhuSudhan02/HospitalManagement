@@ -1,0 +1,169 @@
+.background {
+    width: 100vw;
+    height: 100vh;
+    // background: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 510px;
+    height: 620px;
+    background: white;
+    box-shadow: 0px 30px 30px rgba(0,0,0,0.3);
+    
+}
+.main {
+    // background: pink;
+    width: 84%;
+    height: 80%;
+    padding: 20px 40px 0px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.head {
+    display: flex;
+    flex-direction: column;
+    // margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 18px;
+}
+.font {
+    font-size: 32px;
+    font-weight: 500;
+}
+.sub {
+    font-size: 18px;
+    color: #8F9091;
+}
+mat-form-field{
+    width: 100%;
+}
+.button{
+    width: 160px;
+    height: 54px;
+    background-color: #3B6CFB;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+
+}
+.col{
+    color: #3B6CFB;
+}
+.bot{
+    display: flex;
+    font-size: 18px;
+}
+.fontsub{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.btn {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.img {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    // bottom: 10px;
+    top: 4px;
+    margin-right: 10px;
+}
+.space {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.mat-mdc-slide-toggle.mat-accent {
+    --mdc-switch-selected-focus-state-layer-color: #3B6CFB;
+    --mdc-switch-selected-handle-color: #3B6CFB;
+    --mdc-switch-selected-hover-state-layer-color: #3B6CFB;
+    --mdc-switch-selected-pressed-state-layer-color: #3B6CFB;
+    --mdc-switch-selected-focus-handle-color: #3B6CFB;
+    --mdc-switch-selected-hover-handle-color: #3B6CFB;
+    --mdc-switch-selected-pressed-handle-color: #3B6CFB;
+    --mdc-switch-selected-focus-track-color: #3B6CFB;
+    --mdc-switch-selected-hover-track-color: #3B6CFB;
+    --mdc-switch-selected-pressed-track-color: #3B6CFB;
+    --mdc-switch-selected-track-color: #3B6CFB;
+}
+
+
+@media screen and (max-width : 480px) and (min-width : 320px) {
+    
+    .background {
+        width: 100vw;
+        height: 100vh;
+       
+    }
+    .container {
+        width: 360px;
+        height: 100%;
+       
+    }
+    .main {
+        // background: pink;
+        width: 84%;
+        height: 80%;
+        padding: 20px 10px 0px 30px;
+      
+        gap: 10px;
+        
+    }
+    .head {
+       
+        margin-top: 20px;
+        margin-bottom: 20px;
+        gap: 18px;
+    }
+    .font {
+        font-size: 32px;
+        font-weight: 500;
+    }
+    .sub {
+        font-size: 18px;
+    }
+    
+    .button{
+        width: 160px;
+        height: 54px;
+        background-color: #3B6CFB;
+        border: none;
+        border-radius: 8px;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        color: white;
+    
+    }
+    .col{
+        color: #3B6CFB;
+    }
+    .bot{
+        display: flex;
+        font-size: 18px;
+    }
+    .fontsub{
+        font-size: 18px;
+    }
+    .btn {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .img {
+        width: 18px;
+        height: 18px;
+        position: relative;
+        // bottom: 10px;
+        top: 4px;
+        margin-right: 10px;
+    }
+}
