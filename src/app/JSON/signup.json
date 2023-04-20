@@ -18,5 +18,58 @@
       "password": "manoj@123",
       "id": 3
     }
-  ]
+  ] ,
+
+
+  "Doctor" : [{
+    "ImageSrc" : "../../../assets/usman-yousaf.jpg",
+    "Dname" : "john" ,
+    "Specialist" : "Dentist",
+    "Discription" : "I am here to help you to make your life healthy and happy"
+  },
+  {
+    "ImageSrc" : "../../../assets/kevin-hart.jpg",
+    "Dname" : "cena" ,
+    "Specialist" : "Cardiologists",
+    "Discription" : "I am here to help you to make your life healthy and happy"
+  },
+  {
+    "ImageSrc" : "../../../assets/doctor1.jpg",
+    "Dname" : "roman" ,
+    "Specialist" : "orthopedic ",
+    "Discription" : "I am here to help you to make your life healthy and happy"
+  },
+  {
+    "ImageSrc" : "../../../assets/usman-yousaf.jpg",
+    "Dname" : "reighs" ,
+    "Specialist" : "neurologists",
+    "Discription" : "I am here to help you to make your life healthy and happy"
+  },{
+    "ImageSrc" : "../../../assets/lisa-chavez.jpg",
+    "Dname" : "under" ,
+    "Specialist" : "pediatricians",
+    "Discription" : "I am here to help you to make your life healthy and happy"
+  },
+  {
+    "ImageSrc" : "../../../assets/santosh-daruwala.jpg",
+    "Dname" : "taker" ,
+    "Specialist" : "gynecologists",
+    "Discription" : "I am here to help you to make your life healthy and happy"
+  }
+] , 
+"Appointment" : [{
+  "Aname" : "Madhu" ,
+  "Adoctor" : "dani" ,
+  "Aemail" : "madhu@gmail.com" ,
+  "Adate" : "07/01/1998",
+  "Afrom" : "7 : 00 am",
+  "Ato" : "9 : 00 am",
+  "Anumber" : "9739300663" ,
+  "Ainjury" : "leg" ,
+  "id" : 0
+}]
+
+  
+
+
 }

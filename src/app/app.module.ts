@@ -16,8 +16,11 @@ import { LoginComponent } from './component/login/login.component';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar';
-
-
+import {MatDialogModule} from '@angular/material/dialog';
+import { DialogApointmentComponent } from './component/dialog-apointment/dialog-apointment.component';
+import {NgApexchartsModule} from 'ng-apexcharts';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 
 
 
@@ -28,14 +31,15 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     ParentComponent,
     ChildComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    DialogApointmentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatFormFieldModule,MatInputModule,MatSlideToggleModule,ReactiveFormsModule, FormsModule , HttpClientModule,
-    MatSidenavModule,MatToolbarModule
+    MatSidenavModule,MatToolbarModule,MatDialogModule,NgApexchartsModule,MatSnackBarModule , MatDatepickerModule
     
   ],
   providers: [],

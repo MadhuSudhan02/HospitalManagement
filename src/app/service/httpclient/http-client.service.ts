@@ -17,4 +17,11 @@ export class HttpClientService {
   ){
     return this.httpClient.post(this.baseUrl + url , requestData , token && httpOption)
   }
+
+  getService(
+    url : string ,
+    // httpOption : any
+  ){
+return this.httpClient.get(this.baseUrl +url)
+  }
 }

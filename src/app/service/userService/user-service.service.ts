@@ -30,4 +30,12 @@ export class UserServiceService {
     }
     return this.httpService.postService('/login' , requestData , false , httpHeaderOption)
   }
+
+  doctorGetService(){
+    return this.httpService.getService('/Doctor')
+  }
+
+  loginGetService(){
+    return this.httpService.getService('/user')
+  }
 }

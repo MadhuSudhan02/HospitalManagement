@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ThemePalette } from '@angular/material/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { UserServiceService } from 'src/app/service/userService/user-service.service';
+import { MatSnackBar } from '@angular/material/snack-bar';
 // import { MustMatch } from './_helpers/must-match.validator';
 
 @Component({
@@ -15,7 +16,8 @@ export class SignUpComponent implements OnInit {
   disabled = false;
 
   
-  constructor(private formBuilder: FormBuilder , private userService : UserServiceService) { }
+  constructor(private formBuilder: FormBuilder , private userService : UserServiceService ,
+    private snackBar : MatSnackBar) { }
   
   registerForm!: FormGroup;
     submitted = false;
@@ -50,6 +52,13 @@ export class SignUpComponent implements OnInit {
             this.userService.signUpPost(data).subscribe((req : any) => {
                 console.log( "data in the user" ,req) ;
             })
+
+            //snackbar alert
+            this.snackBar.open('Registered','successfully' , {
+                duration : 3000 
+            })
+                
+            }
         }
         
         // display form values on success
@@ -57,4 +66,3 @@ export class SignUpComponent implements OnInit {
     }
 
 
-}

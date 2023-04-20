@@ -7,15 +7,15 @@
     </div>
 </mat-toolbar>
 <div class="main">
-    <div class="templete">
+    <div class="templete" *ngFor="let doc of doctor">
         <div>
-            <img class="img2"  src="../../../assets/usman-yousaf.jpg" alt="">
+            <img class="img2"  src={{doc.ImageSrc}} alt="">
         </div>
         <div class="name">
-            <span class="font">Dr.John</span>
+            <span class="font">{{doc.Dname}}</span>
         </div>
         <div class="name">
-            <span class="font2">Dentist</span>
+            <span class="font2">{{doc.Specialist}}</span>
         </div>
         <div class="name">
             <img class="img" width="28px" height="28px" src="../../../assets/instagram.png" alt="">
@@ -23,132 +23,13 @@
             <img class="img" width="28px" height="28px" src="../../../assets/twitter.png" alt="">
         </div>
         <div class="name">
-            <p class="font2">The Material Design specifications describe that toolbars can also have multiple rows</p>
+            <p class="font2">{{doc.Discription}}</p>
         </div>
         <div class="name">
-            <button class="button">View Profile</button>
+            <button class="button" (click)="openDialog(doc)">View Profile</button>
 
         </div>
 
     </div>
-    <div class="templete">
-        <div>
-            <img class="img2"  width="100%" height="340px" src="../../../assets/kevin-hart.jpg" alt="">
-        </div>
-        <div class="name">
-            <span class="font">Dr.Benz</span>
-        </div>
-        <div class="name">
-            <span class="font2">Dentist</span>
-        </div>
-        <div class="name">
-            <img class="img" width="28px" height="28px" src="../../../assets/instagram.png" alt="">
-            <img class="img" width="28px" height="28px" src="../../../assets/facebook.png" alt="">
-            <img class="img" width="28px" height="28px" src="../../../assets/twitter.png" alt="">
-        </div>
-        <div class="name">
-            <p class="font2">The Material Design specifications describe that toolbars can also have multiple rows</p>
-        </div>
-        <div class="name">
-            <button class="button">View Profile</button>
 
-        </div>
-
-    </div>
-    <div class="templete">
-        <div>
-            <img class="img2"  width="100%" height="340px" src="../../../assets/doctor1.jpg" alt="">
-        </div>
-        <div class="name">
-            <span class="font">Dr.Ali</span>
-        </div>
-        <div class="name">
-            <span class="font2">Dentist</span>
-        </div>
-        <div class="name">
-            <img class="img" width="28px" height="28px" src="../../../assets/instagram.png" alt="">
-            <img class="img" width="28px" height="28px" src="../../../assets/facebook.png" alt="">
-            <img class="img" width="28px" height="28px" src="../../../assets/twitter.png" alt="">
-        </div>
-        <div class="name">
-            <p class="font2">The Material Design specifications describe that toolbars can also have multiple rows</p>
-        </div>
-        <div class="name">
-            <button class="button">View Profile</button>
-
-        </div>
-
-    </div>
-    <div class="templete">
-        <div>
-            <img class="img2"  width="100%" height="340px" src="../../../assets/usman-yousaf.jpg" alt="">
-        </div>
-        <div class="name">
-            <span class="font">Dr.Bheema</span>
-        </div>
-        <div class="name">
-            <span class="font2">Dentist</span>
-        </div>
-        <div class="name">
-            <img class="img" width="28px" height="28px" src="../../../assets/instagram.png" alt="">
-            <img class="img" width="28px" height="28px" src="../../../assets/facebook.png" alt="">
-            <img class="img" width="28px" height="28px" src="../../../assets/twitter.png" alt="">
-        </div>
-        <div class="name">
-            <p class="font2">The Material Design specifications describe that toolbars can also have multiple rows</p>
-        </div>
-        <div class="name">
-            <button class="button">View Profile</button>
-
-        </div>
-
-    </div>
-    <div class="templete">
-        <div>
-            <img class="img2"  width="100%" height="340px" src="../../../assets/lisa-chavez.jpg" alt="">
-        </div>
-        <div class="name">
-            <span class="font">Dr.Shama</span>
-        </div>
-        <div class="name">
-            <span class="font2">Dentist</span>
-        </div>
-        <div class="name">
-            <img class="img" width="28px" height="28px" src="../../../assets/instagram.png" alt="">
-            <img class="img" width="28px" height="28px" src="../../../assets/facebook.png" alt="">
-            <img class="img" width="28px" height="28px" src="../../../assets/twitter.png" alt="">
-        </div>
-        <div class="name">
-            <p class="font2">The Material Design specifications describe that toolbars can also have multiple rows</p>
-        </div>
-        <div class="name">
-            <button class="button">View Profile</button>
-
-        </div>
-
-    </div>
-    <div class="templete">
-        <div>
-            <img class="img2"  width="100%" height="340px" src="../../../assets/santosh-daruwala.jpg" alt="">
-        </div>
-        <div class="name">
-            <span class="font">Dr.Soma</span>
-        </div>
-        <div class="name">
-            <span class="font2">Dentist</span>
-        </div>
-        <div class="name">
-            <img class="img" width="28px" height="28px" src="../../../assets/instagram.png" alt="">
-            <img class="img" width="28px" height="28px" src="../../../assets/facebook.png" alt="">
-            <img class="img" width="28px" height="28px" src="../../../assets/twitter.png" alt="">
-        </div>
-        <div class="name">
-            <p class="font2">The Material Design specifications describe that toolbars can also have multiple rows</p>
-        </div>
-        <div class="name">
-            <button class="button">View Profile</button>
-
-        </div>
-
-    </div>
 </div>
